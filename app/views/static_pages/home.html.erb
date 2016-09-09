@@ -1,0 +1,15 @@
+<% provide :title, "Home" %>
+<div class="center jumbotron">
+  <div class="home">
+    <% if user_signed_in? %>
+      <h2><%= "Wellcome to framgia drink system" %></h2>
+      <div class="row">
+      </div>
+    <% else %>
+      <div class="row">
+        <h2><%= "Wellcome to framgia drink system" %></h2>
+      </div>
+    <% end %>
+  </div>
+  <%= image_tag("drink3.jpg", size: "900x550") %>
+</div>
